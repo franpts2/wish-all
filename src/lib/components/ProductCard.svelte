@@ -3,14 +3,11 @@
 		image = "",
 		brand = "",
 		name = "",
-		rating = 0,
-		reviewCount = 0,
-		price = 0,
 	} = $props();
 </script>
 
 <div
-	class="w-xs overflow-hidden rounded-lg cursor-pointer hover:shadow-lg transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02]"
+	class="w-60 overflow-hidden rounded-lg cursor-pointer hover:shadow-lg transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02]"
 >
 	<!-- Product Image -->
 	<div
@@ -26,17 +23,5 @@
 
 		<!-- Product Name -->
 		<h3 class="font-medium text-text-primary">{name}</h3>
-
-		<!-- Rating -->
-		<div class="flex items-center gap-2">
-			<div class="flex items-center">
-				<span class="text-sm">⭐</span>
-				<span class="text-sm font-medium text-text-primary ml-1">{rating}</span>
-			</div>
-			<span class="text-sm text-text-secondary">({reviewCount})</span>
-		</div>
-
-		<!-- Price -->
-		<p class="text-lg font-bold text-text-primary">${price}</p>
 	</div>
 </div>
